@@ -1,0 +1,50 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Demonstrating string methods
+        string sampleString = "Hello, World!";
+        Console.WriteLine("Original String: " + sampleString);
+
+        // Length of the string
+        Console.WriteLine("Length: " + sampleString.Length);
+
+        // Substring
+        string substring = sampleString.Substring(7, 5);
+        Console.WriteLine("Substring (7, 5): " + substring);
+
+        // Replace
+        string replacedString = sampleString.Replace("World", "C#");
+        Console.WriteLine("Replaced String: " + replacedString);
+
+        // IndexOf
+        int index = sampleString.IndexOf("World");
+        Console.WriteLine("Index of 'World': " + index);
+
+        // ToUpper and ToLower
+        string upper = sampleString.ToUpper();
+        string lower = sampleString.ToLower();
+        Console.WriteLine("Uppercase: " + upper);
+        Console.WriteLine("Lowercase: " + lower);
+
+        // Demonstrating char structure
+        char sampleChar = 'A';
+        Console.WriteLine("\nOriginal Char: " + sampleChar);
+
+        // Checking if the character is a letter or digit
+        bool isLetter = Char.IsLetter(sampleChar);
+        bool isDigit = Char.IsDigit(sampleChar);
+        Console.WriteLine("Is Letter: " + isLetter);
+        Console.WriteLine("Is Digit: " + isDigit);
+
+        // Converting char to lower case
+        char lowerChar = Char.ToLower(sampleChar);
+        Console.WriteLine("Lowercase Char: " + lowerChar);
+
+        // Converting char to upper case
+        char upperChar = Char.ToUpper(lowerChar);
+        Console.WriteLine("Uppercase Char: " + upperChar);
+    }
+}
